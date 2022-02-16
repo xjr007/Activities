@@ -31,3 +31,40 @@ class A {
 
 	}
 }
+
+class B {
+	public static void main(String[] args) {
+		
+		Consumer<String> message = (String s) -> System.out.println("Consumer prints: " + s);
+		message.accept("Mubashir");
+
+		Supplier<Integer> theNumber_5 = () -> 5;
+		int num = theNumber_5.get();
+		System.out.println("Supplier prints: " + num);
+
+		Predicate<Integer> checkMoreThan5 = (Integer x) -> x > 5;
+		boolean isMoreThan5 = checkMoreThan5.test(4);
+		System.out.println("Predicate prints: " + isMoreThan5);
+
+		BiPredicate<String, Integer> checkLength = (String s, Integer x) -> s.length() > x;
+		boolean isLongerThan5 = checkLength.test("Mubashir", 5);
+		System.out.println("BiPredicate prints: " + isLongerThan5);
+
+	}
+}
+
+class C {
+	public static void main(String[] args) {
+
+		Consumer<Integer> myInteger = (Integer x) -> System.out.println("Consumer prints: " + x);
+		myInteger.accept(50);
+
+		Supplier<String> myString = () -> "Mubashir";
+		System.out.println("Supplier prints: " + myString.get());
+
+		BiPredicate<String, String> myBiPredicate = (String s, String x) -> s.equals(x);
+		System.out.println("The Strings equal each other? " + myBiPredicate.test("Mubashir", "Mubashir"));  
+
+
+	}
+}
