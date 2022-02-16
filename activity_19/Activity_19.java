@@ -7,8 +7,11 @@ class A {
 		boolean results = lambda.test("This");				// false
 		boolean results_2 = lambda.test("Okay then");			// true
 		
-		System.out.println(results);
-		System.out.println(results_2);
+		//System.out.println(results);
+		//System.out.println(results_2);
+
+		Predicate<String> lambda_2 = (String s) -> s.toLowerCase().startsWith("a");
+		System.out.println(lambda_2.test("Aaqiel"));
 	}
 }
 
