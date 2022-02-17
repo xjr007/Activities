@@ -19,7 +19,18 @@
  *		4. 	Print your results to console.
  * */
 
-class A {
+
+class A implements B {
 // Do code here
+
+    public static void main(String[] args) {
+
+        A object = new A();
+        object.print("mubs");
+    }
+
+    public void print(String s) {
+        System.out.println(s);
+    }
 
 }
