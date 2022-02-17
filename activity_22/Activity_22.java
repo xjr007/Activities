@@ -17,3 +17,26 @@
  *
  *
  * */
+class A implements B {
+    public static void main(String[] args) {
+
+    B lambda = (String s) -> System.out.println("LAMBDA RAN LESSGOOO");
+    lambda.print("Muubzz");        
+
+    A object = new A();
+    object.print("Muubz");
+    }
+
+    public void print(String s) {
+        if(s.length() == 5) {
+            System.out.println("Word length is correct");
+        } else {
+        System.out.println("Word is too long");
+            }
+    }
+}
+
+interface B{
+
+    void print(String s);
+}

@@ -18,8 +18,8 @@ class A {
 	
 	public static void main(String[] args) {
 		String name = "Mubashir";
-		Predicate<String> checkString = (String s) -> s.equals(name);
 		name = "Aaqiel";
+		Predicate<String> checkString = (String s) -> s.equals(name);
 		boolean res = checkString.test(name);
 		System.out.println(res);
 	}
