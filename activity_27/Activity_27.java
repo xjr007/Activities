@@ -23,6 +23,8 @@ class A {
 
 		Comparator<String> byLength;
 
+		byLength = (s1, s2) -> s1.length() - s2.length();
+		names.sort(byLength);
 		System.out.println(names);
 	}
 }
