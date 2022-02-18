@@ -28,5 +28,15 @@ class A {
 
 		// Do code here
 
+		animals.removeIf(s -> s.contains("e"));
+		System.out.print(animals);
+
+
+		for(String animal:animals) {
+			int i = 0;
+			animal.removeIf(animal.chartAt(i));
+		
+		}
+
 	}
 }
