@@ -23,7 +23,11 @@ class E extends A {
 		 *	ae.x IS NOT VISIBLE
 		 *
 		 * */
-		A ae = new E();
-		System.out.println(ae.c);
+		// A ae = new E();
+		// System.out.println(ae.c);
+	System.out.println("hey");
+
+	A object = new A();
+	object.main(args);
 	}
 }
