@@ -42,8 +42,11 @@ class D extends C {
 
 	public static void main(String[] args) {
 
-     	A object = new D();
-		object.mySurname();
+     		A o = new D();
+		o.mySurname();
+		
+		System.out.println(o.name);
+		
 
 
 	}
