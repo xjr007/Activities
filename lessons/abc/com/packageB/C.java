@@ -18,6 +18,17 @@ class D extends C {
 }
 
 class E extends A {
+
+	public void m2() {
+		A a = new A();
+		int x = a.x;
+		System.out.println(x);
+	}
+
+
+
+
+
 	public static void main(String[] args) {
 		/*	A ae = new E();
 		 *	ae.x IS NOT VISIBLE
@@ -28,6 +39,8 @@ class E extends A {
 	System.out.println("hey");
 
 	A object = new A();
-	object.main(args);
+	System.out.println();
+	E e = new E();
+	e.m2();
 	}
 }
