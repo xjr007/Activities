@@ -17,6 +17,17 @@ class D extends C {
 }
 
 class E extends A {
+
+	public void m2() {
+		A a = new A();
+		int x = a.x;
+		System.out.println(x);
+	}
+
+
+
+
+
 	public static void main(String[] args) {
 		/*	A ae = new E();
 		 *	ae.x IS NOT VISIBLE
@@ -28,8 +39,5 @@ class E extends A {
 	
 	E object = new E();
 	object.methA();
-
-
-
 	}
 }
