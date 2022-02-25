@@ -11,7 +11,6 @@ public class C {
 class D extends C {
 	public static void main(String[] args) {
 		C c = new C();
-		System.out.println(c.x);
 		System.out.println(c.o);
 		System.out.println(c.c);
 	}
@@ -37,10 +36,8 @@ class E extends A {
 		// A ae = new E();
 		// System.out.println(ae.c);
 	System.out.println("hey");
-
-	A object = new A();
-	System.out.println();
-	E e = new E();
-	e.m2();
+	
+	E object = new E();
+	object.methA();
 	}
 }

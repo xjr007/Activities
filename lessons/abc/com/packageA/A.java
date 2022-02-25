@@ -6,6 +6,9 @@ public class A {
 	boolean o;
 	public char c = 'A';
 
+	protected void methA() { 
+	System.out.println(x);
+	}
 }
 
 class B {
