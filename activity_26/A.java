@@ -4,7 +4,7 @@ public class A implements Comparator<Character> {
 	
 	public int compare(Character s1, Character s2) {
 
-		return s1.compareTo(s2);
+		return  -s1.compareTo(s2);
 
 
 
@@ -35,7 +35,7 @@ public class A implements Comparator<Character> {
 		// Sort letters in ascending order
 		// using overridden method
 
-		Collections.sort(letters);
+		Collections.sort(letters, new A());
 		System.out.println(letters);
 
 		// Sort letters in descending order
