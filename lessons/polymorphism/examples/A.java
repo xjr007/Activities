@@ -10,6 +10,7 @@ public class A {
 }
 
 class B extends A {
+	
 	String name = "Mary Poppins";
 	public int getHeight() {
 		return 17;
@@ -17,8 +18,11 @@ class B extends A {
 }
 
 class C extends B {
+	
 	public static void main(String[] args) {
+		
 		C o = new C();
+		
 		A ao = o;
 		// Object o is dereferenced to A
 		System.out.println(ao.getName());
